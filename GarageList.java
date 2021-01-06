@@ -38,6 +38,9 @@ public class GarageList {
 			if (v instanceof Bus & v.getModel().contains(model)) {
 				System.out.println("Your vehicle is a bus and therefore you will pay £"+busPrice);
 			}
+			else{
+				System.out.println("That model number wasn't found. Try again with the model number of the vehicle");
+			}
 		}
 	}
 	@Override
