@@ -5,17 +5,20 @@ public abstract class Vehicle {
 	String model;
 	String colour;
 	int wheels;
+	String reg;
 	
-	public Vehicle(String model, String colour, int wheels) {
+	public Vehicle(String model, String colour, int wheels, String reg) {
 		super();
 		this.model = model;
 		this.colour = colour;
 		this.wheels = wheels;
+		this.reg = reg;
 	}
 
 	public Vehicle() {
 		super();
 	}
+
 
 	public String getModel() {
 		return model;
@@ -41,10 +44,20 @@ public abstract class Vehicle {
 		this.wheels = wheels;
 	}
 
+	public String getReg() {
+		return reg;
+	}
+
+	public void setReg(String reg) {
+		this.reg = reg;
+	}
+
 	@Override
 	public String toString() {
-		return "Vehicle [model=" + model + ", colour=" + colour + ", wheels=" + wheels + "]";
+		return "Vehicle [model=" + model + ", colour=" + colour + ", wheels=" + wheels + ", reg=" + reg + "]";
 	}
+
+	
 
 	
 	
